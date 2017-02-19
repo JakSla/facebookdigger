@@ -5,6 +5,7 @@
 </head>
 <body>
 <h3>Hello, <span th:text="${facebookProfile}">username</span>!</h3>
+
 <h4>Here is your feed:</h4>
 <div th:each="post:${feed}">
     <b th:text="${post.from.name}">from</b> wrote:
